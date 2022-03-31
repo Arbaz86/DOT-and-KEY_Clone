@@ -19,7 +19,7 @@ btn.onclick = async (event) => {
   register_data = JSON.stringify(register_data);
   try {
     let res = await fetch(
-      `http://localhost:5000/register`,
+      `http://localhost:4000/register`,
       {
         method: "POST",
         body: register_data,
