@@ -10,18 +10,16 @@ btn.onclick = async (event) => {
   event.preventDefault();
 
   let register_data = {
-    name: "Anannya!",
-    email: document.querySelector("#name").value,
+    firstname: document.querySelector("#name").value,
+    lastname: document.querySelector("#last_name").value,
+    email: document.querySelector("#email").value,
     password: document.querySelector("#password").value,
-    username: document.querySelector("#email").value,
-    mobile: document.querySelector("#last_name").value,
-    description: "Anannya",
   };
 
   register_data = JSON.stringify(register_data);
   try {
     let res = await fetch(
-      `https://masai-api-mocker.herokuapp.com/auth/register`,
+      `http://localhost:5000/register`,
       {
         method: "POST",
         body: register_data,
@@ -31,12 +29,12 @@ btn.onclick = async (event) => {
       }
     );
     let data = await res.json();
-    console.log(data.error);
-    if (data.error == false) {
-      alert("Account Sreated Successfully");
+    console.log(data);
+    if (data.message == undefined) {
+      alert("Account Created Successfully");
       window.location.href = "login.html";
     } else {
-      alert("Username or password already exist!!");
+      alert(data.message);
     }
   } catch (error) {
     console.log(error);
