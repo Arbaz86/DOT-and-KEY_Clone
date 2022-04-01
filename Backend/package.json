@@ -29,6 +29,6 @@
     "passport": "^0.5.2",
     "passport-google-oauth20": "^2.0.0",
     "uuid": "^8.3.2"
-  },
-  "devDependencies": {}
+  }
+  
 }
