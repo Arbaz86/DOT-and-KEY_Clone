@@ -47,3 +47,4 @@ const generateToken = (user) => {
 
 
 module.exports = router;
+module.exports = generateToken;

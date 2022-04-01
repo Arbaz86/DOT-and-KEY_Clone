@@ -44,6 +44,21 @@ let btn = document.getElementById("button1");
     }
   };
 
+  // let google = document.getElementById("google");
+
+  // google.onclick()= ()=>{
+  //   console.log("clicked");
+  // }
+  let gogle = document.querySelector("#google");
+  gogle.onclick= async()=>{
+   try{
+     console.log("clicked");
+     window.location.href="http://localhost:4000/auth/google/";
+   }
+   catch(error){
+     console.log(error);
+   }
+  }
  
   document.querySelector("#leftNav > img ").addEventListener("click", () => {
     location.href = "index.html";
