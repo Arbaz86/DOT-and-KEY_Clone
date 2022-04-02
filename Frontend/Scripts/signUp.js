@@ -18,16 +18,13 @@ btn.onclick = async (event) => {
 
   register_data = JSON.stringify(register_data);
   try {
-    let res = await fetch(
-      `http://localhost:4000/register`,
-      {
-        method: "POST",
-        body: register_data,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    let res = await fetch(`http://localhost:4000/register`, {
+      method: "POST",
+      body: register_data,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     let data = await res.json();
     console.log(data);
     if (data.message == undefined) {
@@ -42,16 +39,15 @@ btn.onclick = async (event) => {
 };
 
 let gogle = document.querySelector("#google");
-  gogle.onclick= async()=>{
-   try{
-     console.log("clicked");
-     window.location.href="http://localhost:4000/auth/google/";
-   }
-   catch(error){
-     console.log(error);
-   }
+gogle.onclick = async () => {
+  try {
+    console.log("clicked");
+    window.location.href = "http://localhost:4000/auth/google/";
+  } catch (error) {
+    console.log(error);
   }
-  
+};
+
 document.querySelector("#leftNav > img ").addEventListener("click", () => {
   location.href = "index.html";
 });
