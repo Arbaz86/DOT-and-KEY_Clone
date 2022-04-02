@@ -1828,7 +1828,7 @@ let url;
 
 let bodyScrub = async (scrubParent) => {
   try {
-    let res = await fetch("http://localhost:4000/bodycare/scrub");
+    let res = await fetch("http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/bodycare/scrub");
     let scrubData = await res.json();
     createProductCard(scrubData, scrubParent);
     console.log(scrubData);
@@ -1840,7 +1840,7 @@ bodyScrub(scrubParent);
 
 let bodySerum = async (serumParent) => {
   try {
-    let res = await fetch("http://localhost:4000/bodycare/serum");
+    let res = await fetch("http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/bodycare/serum");
     let serumData = await res.json();
     createProductCard(serumData, serumParent);
     console.log(serumData);
@@ -1852,7 +1852,7 @@ bodySerum(serumParent);
 
 let bodyButter = async (butterParent) => {
   try {
-    let res = await fetch("http://localhost:4000/bodycare/butter");
+    let res = await fetch("http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/bodycare/butter");
     let butterData = await res.json();
     createProductCard(butterData, butterParent);
     console.log(butterData);
@@ -1864,7 +1864,7 @@ bodyButter(butterParent);
 
 let bodyCombo = async (comboParent) => {
   try {
-    let res = await fetch("http://localhost:4000/bodycare/combo");
+    let res = await fetch("http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/bodycare/combo");
     let comboData = await res.json();
     createProductCard(comboData, comboParent);
     console.log(comboData);
@@ -1892,7 +1892,7 @@ document
 
 let bodyCare = async () => {
   try {
-    let res = await fetch("http://localhost:4000/bodycare");
+    let res = await fetch("http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/bodycare");
     let bodyCareData = await res.json();
     localStorage.setItem("data", JSON.stringify(bodyCareData));
     console.log(bodyCareData);

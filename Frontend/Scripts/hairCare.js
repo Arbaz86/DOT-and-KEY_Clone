@@ -626,7 +626,7 @@ import { createProductPage, createProductCard, mainDisp } from "./main.js";
 let parent = document.getElementById("product-grid");
 // createProductCard(product_data, parent);
 
-let url = "http://localhost:4000/haircare";
+let url = "http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/haircare";
 
 let data = async () => {
   try {
