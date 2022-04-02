@@ -18,8 +18,8 @@ function showMenuBar() {
                         <li class="menu-bar-sameDesign-li"><a href="" class="menu-link-design"> SHOP ALL
                                 PRODUCTS</a>
                         </li>
-                        <li class="menu-bar-sameDesign-li"><a href="" class="menu-link-design"> HAIR CARE</a></li>
-                        <li class="menu-bar-sameDesign-li"><a href="" class="menu-link-design"> BODY CARE</a></li>
+                        <li class="menu-bar-sameDesign-li"><a href="hairCare.html" class="menu-link-design"> HAIR CARE</a></li>
+                        <li class="menu-bar-sameDesign-li"><a href="bodyCare.html" class="menu-link-design"> BODY CARE</a></li>
                         <li class="menu-bar-sameDesign-li"><a href="" class="menu-link-design"> IKWI NUTRITION</a>
                         </li>
                         <li class="menu-bar-sameDesign-li"><a href="" class="menu-link-design"> KNOW US BETTER</a>

@@ -291,23 +291,19 @@ import { createProductCard } from "./main.js";
 
 let parent = document.getElementById("product-grid");
 
+let url = "http://localhost:4000/serum";
 
-
-let url="http://localhost:4000/serum";
-
-let data=async()=>{
-
-   try {
-    let res=await fetch(url)
-    let Data=await res.json()
+let data = async () => {
+  try {
+    let res = await fetch(url);
+    let Data = await res.json();
     createProductCard(Data, parent);
-    console.log(Data)
-   } catch (err) {
-       console.log(err)
-   }
-
-}
-data()
+    console.log(Data);
+  } catch (err) {
+    console.log(err);
+  }
+};
+data();
 
 // createProductCard(serum_data, parent);
 document.querySelector("#leftNav > img ").addEventListener("click", () => {
