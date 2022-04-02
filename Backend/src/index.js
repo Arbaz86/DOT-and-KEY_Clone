@@ -23,8 +23,9 @@ app.use("/haircare",hairCareController)
 app.use("/serum",serumController)
 app.use("/moisturizer",moisturizerController)
 
-app.use("/login",login);
+
 app.use("/register",register);
+app.use("/login",login);
 
 
 
