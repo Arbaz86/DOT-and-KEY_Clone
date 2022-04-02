@@ -2,6 +2,7 @@ let cartData = JSON.parse(localStorage.getItem("cartArr")) || [];
 let sum;
 // console.log(cartData);
 total(cartData);
+
 if (cartData.length == 0) {
   console.log("empty");
 }
