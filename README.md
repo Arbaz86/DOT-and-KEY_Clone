@@ -21,7 +21,7 @@ An e-commerce website which offers various cosmetic products and health suppleme
   - `REST API`
 
 ---
-<h3>Features:<h3/>
+### Features: 
   <ol>
     <li>Homepage</li>
     <li>Sign up</li>
@@ -30,8 +30,9 @@ An e-commerce website which offers various cosmetic products and health suppleme
      <li>About Page</li>
      <li>Payment page</li>
   </ol>
----  
- <h3>Landing  Page</h3>
+
+
+## Landing  Page
   <br>
    This is our landing page
   <br>
@@ -74,13 +75,9 @@ An e-commerce website which offers various cosmetic products and health suppleme
   <img src="https://miro.medium.com/max/700/1*ayz0Y20CokZ5W-gf3d-IIA.png"/>
   ---
   
-  
-### Medium Link
-https://medium.com/@satishkumarojha15/my-journey-to-create-a-beauty-products-e-commerce-website-in-my-unit-3-construct-week-using-html-e04861fe63a9
-
 
 
 
 ### Netlify Link
- https://loving-cray-867bc6.netlify.app/
+ https://dot-and-key-website-clone.netlify.app/
 
