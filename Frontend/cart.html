@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/193a1c0cfc.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/193a1c0cfc.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Cart</title>
     <link rel="stylesheet" href="Styles/footer.css" />
     <link rel="stylesheet" href="Styles/navBar.css" />
-    <link rel="stylesheet" href="Styles/cart.css">
-    <link rel="stylesheet" href="Styles/showMenuBar.css">
-</head>
+    <link rel="stylesheet" href="Styles/cart.css" />
+    <link rel="stylesheet" href="Styles/showMenuBar.css" />
+  </head>
 
-<body>
+  <body>
     <div id="container">
-        <div id="navInterval"></div>
-        <nav id="navbar">
-
-            <!-- for navbar  -->
-            <div id="cart">
-                <!-- for cart -->
-            </div>
-        </nav>
-        <div id="newDrawer"></div> <!-- menuBar appended hare -->
-
-        <div id="main">
-            <!-- for body part -->
-            <div class="bag">Bag</div>
-            <div id="refDiv">
-                <p>REFERRED BY?</p>
-                <input type="text" placeholder="referral code" id="refeered" onkeypress="discount(e)">
-                <!-- <button id="discount">click</button> -->
-            </div>
-            <div id="displayDataCart">
-                <table>
-                    <thead>
-                        <tr id="row">
-                            <td></td>
-                            <td>QUANTITY</td>
-                            <td>TOTAL</td>
-                        </tr>
-
-                    </thead>
-                    <tbody></tbody>
-                </table>
-                <hr>
-            </div>
-            <div id="cartTotalDiv">
-                <div></div>
-                <div>
-                    <div>subtotal</div>
-                    <div id="cartTotal"></div>
-                </div>
-
-            </div>
-
-            <div id="text">
-                <div></div>
-                <div>
-                    <div>Taxes Included, Shipping & Discount Codes to be Calculated</div>
-                    <div> at Checkout.</div>
-                </div>
-            </div>
-
-            <div id="check-div">
-                <div></div>
-                <button id="checkout">Checkout</button>
-            </div>
+      <div id="navInterval"></div>
+      <nav id="navbar">
+        <!-- for navbar  -->
+        <div id="cart">
+          <!-- for cart -->
         </div>
-        <div id="filter">
-            <!-- for filter -->
+      </nav>
+      <div id="newDrawer"></div>
+      <!-- menuBar appended hare -->
+
+      <div id="main">
+        <!-- for body part -->
+        <div class="bag">Bag</div>
+        <div id="refDiv">
+          <p>REFERRED BY?</p>
+          <input
+            type="text"
+            placeholder="referral code"
+            id="refeered"
+            onkeypress="discount(e)"
+          />
+          <!-- <button id="discount">click</button> -->
         </div>
-        <div id="footer">
-            <!-- for bottom lane of page -->
+        <div id="displayDataCart">
+          <table>
+            <thead>
+              <tr id="row">
+                <td></td>
+                <td>QUANTITY</td>
+                <td>TOTAL</td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <hr />
         </div>
+        <div id="cartTotalDiv">
+          <div></div>
+          <div>
+            <div>subtotal</div>
+            <div id="cartTotal"></div>
+          </div>
+        </div>
+
+        <div id="text">
+          <div></div>
+          <div>
+            <div>
+              Taxes Included, Shipping & Discount Codes to be Calculated
+            </div>
+            <div>at Checkout.</div>
+          </div>
+        </div>
+
+        <div id="check-div">
+          <div></div>
+          <button id="checkout">Checkout</button>
+        </div>
+      </div>
+      <div id="filter">
+        <!-- for filter -->
+      </div>
+      <div id="footer">
+        <!-- for bottom lane of page -->
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
 <script type="module" src="Scripts/cart.js"></script>
 <script type="module">
-    import { showMenuBar } from "./Componentes/showMenuBar.js";
+  import { showMenuBar } from "./Componentes/showMenuBar.js";
 
-    document.getElementById("newDrawer").innerHTML = showMenuBar();
-    // console.log(showMenuBar());
+  document.getElementById("newDrawer").innerHTML = showMenuBar();
+  // console.log(showMenuBar());
 </script>
 
 <script src="Scripts/menuBarFunc.js"></script>

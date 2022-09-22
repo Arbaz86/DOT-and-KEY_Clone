@@ -18,13 +18,16 @@ btn.onclick = async (event) => {
 
   register_data = JSON.stringify(register_data);
   try {
-    let res = await fetch(`http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/register`, {
-      method: "POST",
-      body: register_data,
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    let res = await fetch(
+      `http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/register`,
+      {
+        method: "POST",
+        body: register_data,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     let data = await res.json();
     console.log(data);
     if (data.message == undefined) {
@@ -42,7 +45,8 @@ let gogle = document.querySelector("#google");
 gogle.onclick = async () => {
   try {
     console.log("clicked");
-    window.location.href = "http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/auth/google/";
+    window.location.href =
+      "http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/auth/google/";
   } catch (error) {
     console.log(error);
   }

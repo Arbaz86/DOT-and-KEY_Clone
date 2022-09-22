@@ -291,7 +291,8 @@ import { createProductCard } from "./main.js";
 
 let parent = document.getElementById("product-grid");
 
-let url = "http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/serum";
+let url =
+  "http://ec2-13-235-68-193.ap-south-1.compute.amazonaws.com:4000/serum";
 
 let data = async () => {
   try {
