@@ -1,4 +1,3 @@
-# UNIT4_DOT-KEY
 # DotAndKey Clone
 An e-commerce website which offers various cosmetic products and health supplements for women.
 
