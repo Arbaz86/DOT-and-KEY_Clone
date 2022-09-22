@@ -1,5 +1,4 @@
 # UNIT4_DOT-KEY
-<img src="https://drive.google.com/file/d/1JCx7OdddL5MGuI373IQMlSvk06BkzlO2/view"/>
 # DotAndKey Clone
 An e-commerce website which offers various cosmetic products and health supplements for women.
 
@@ -19,6 +18,7 @@ An e-commerce website which offers various cosmetic products and health suppleme
   - `HTML`
   - `CSS`
   - `JavaScript`
+  - `REST API`
 
 ---
 <h3>Features:<h3/>
